@@ -1,0 +1,16 @@
+@use "general";
+@use "fonts";
+@use "buttons";
+@use "header";
+@use "main";
+@use "section-hero";
+@use "section-artistes";
+@use "section-favoris";
+@use "section-cartes";
+@use "section-texte";
+@use "section-blog";
+@use "section-expo";
+@use "section-musee";
+@use "footer";
+
+@use "./partials/variables" as var;

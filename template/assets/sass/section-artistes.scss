@@ -1,0 +1,39 @@
+@use "partials/variables" as var;
+@use "partials/mixins" as mixins;
+@use "partials/placeholders";
+
+.artistes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+
+    @media #{var.$medium-plus} {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 0.5rem;
+    }
+
+    .artiste {
+        font-style: italic;
+        font-size: 0.8rem;
+        text-align: center;
+
+        @media #{var.$medium-plus} {
+            font-size: 0.9rem;
+        }
+
+            img {
+            margin-bottom: 0.5rem;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 6px;
+
+            @media #{var.$medium-plus} {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}

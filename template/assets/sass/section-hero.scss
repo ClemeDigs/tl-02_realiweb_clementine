@@ -1,0 +1,51 @@
+@use "partials/variables" as var;
+@use "partials/mixins" as mixins;
+@use "partials/placeholders";
+
+.section_hero {
+    background: var.$color-primary;
+    background: linear-gradient(180deg, var.$color-primary 0%, var.$color-secondary 50%, var.$color-third 100%);
+    display: grid;
+
+    @media #{var.$medium-plus} {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    img {
+        width: 100%;
+        max-width: 768px;
+        justify-self: center;
+    }
+
+    .hero-mobile {
+        @media #{var.$medium-plus} {
+            display: none;
+        }
+    }
+
+    .silhouette {
+        display: none;
+
+        @media #{var.$medium-plus} {
+            display: inline-block;
+        }
+    }
+
+    .hero_text {
+        padding: 2rem;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        @media #{var.$medium-plus} {
+        grid-column: 2/ 3;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+}

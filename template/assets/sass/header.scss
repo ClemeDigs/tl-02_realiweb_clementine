@@ -1,0 +1,113 @@
+@use "partials/variables" as var;
+@use "partials/mixins" as mixins;
+@use "partials/placeholders";
+
+header { 
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    box-shadow: var.$box-shadow-large;
+
+    @media #{var.$medium-plus} {
+        grid-column: 1 / 13;
+    }
+
+
+    .menu_secondaire {
+        background-color: var.$color-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        color: white;
+
+        button {
+            @media #{var.$medium-plus} {
+                display: inline-block;
+            }
+        }
+
+        .fleche-mobile {
+            @media #{var.$medium-plus} {
+                display: none;
+            }
+        }
+
+        .btn_menu_secondaire {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+    }
+
+    .menu {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 0.5rem 1rem;
+
+        .logo_menu {
+            display: grid;
+            grid-template-columns: 33% 67%;
+
+            .menu-burger {
+                border: none;
+                @media #{var.$medium-plus} {
+                    display: none;
+                }
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                gap: 1.2rem;
+                font-family: 'Surrealist';
+
+                img {
+                    width: 40px;
+
+                    @media #{var.$medium-plus} {
+                        width: 60px
+                    }
+                }
+            }
+
+            nav {
+                display: none;
+
+                @media #{var.$medium-plus} {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                ul {
+                    @extend %no-style;
+                    display: flex;
+                    gap: 1rem;
+                    padding-left: 0;
+                }
+            }
+        }
+
+
+        .icones {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1rem;
+
+            span {
+                width: 24px;
+                @media #{var.$medium-plus} {
+                    width: 30px;
+                }
+            }
+
+            a:hover {
+                border-bottom: 2px solid var.$dark;
+            }
+        }
+    }
+}

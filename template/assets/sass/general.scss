@@ -1,0 +1,41 @@
+@use "./partials/variables" as var;
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    font-family: 'Montserrat Alternate';
+    background-color: var.$color-light;
+    margin: 0 auto;
+    max-width: 1440px;
+    color: var.$dark;
+
+    @media #{var.$medium-plus} {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    color: white;
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
+  
+  a {
+    color: var.$dark;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }

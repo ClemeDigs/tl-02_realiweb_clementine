@@ -1,0 +1,15 @@
+@use 'variables' as var;
+
+@mixin button-reset($button-type: none, $border-type) {
+  background: $button-type;
+  border: 1px solid $border-type;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: var.$color-text;
+  font-family: 'Montserrat Alternate';
+}
+
+@mixin ul-nostyle() {
+  list-style: none;
+}
+

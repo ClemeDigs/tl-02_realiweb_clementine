@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="./assets/sass/styles.scss">
+    <script src="./main.js" defer></script>
+    <title>Surréaliste</title>
+  </head>
+  <body>
+    <header>
+
+      <div class="menu_secondaire">
+        <span class="material-symbols-outlined fleche-mobile">
+          arrow_back_ios
+        </span>
+        <button class="btn-primary hidden">Zone des artistes</button>
+        <p>Venez nous rendre visite à Montréal, Paris, New York et Madrid</p>
+        <div class="btn_menu_secondaire">
+          <span class="material-symbols-outlined fleche-mobile">
+            arrow_forward_ios
+          </span>
+          <span class="material-symbols-outlined fleche-mobile">
+            close
+          </span>
+          <button class="btn-primary hidden">Se connecter</button>
+          <button class="btn-primary hidden">S'inscrire</button>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="logo_menu">
+          <button class="menu-burger btn-none"><span class="material-symbols-outlined">
+            menu
+            </span></button>
+          <div class="logo">
+            <img src="./assets/img/logo.svg" alt="logo">
+            <p>Surrealiste</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Les artistes</a></li>
+              <li><a href="#">Les expositions</a></li>
+              <li><a href="#">À propos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icones">
+          <a href="#"><span class="material-symbols-outlined">
+            search
+          </span></a>
+          <a href=""><span class="material-symbols-outlined">
+            favorite
+          </span></a>
+          <a href=""><span class="material-symbols-outlined">
+            home
+          </span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="section_hero">
+        <img class="silhouette" src="./assets/img/silhouette.png" alt="Silhouette surrealiste">
+        <img class="hero-mobile" src="./assets/img/hero.jpg" alt="paysage surréaliste">
+        <div class="hero_text">
+          <h1>Notre organisme, au coeur du mouvement surréaliste</h1>
+          <h2>Découvrez les arts modernes autrement</h2>
+          <button class="btn-primary">Découvrir</button>
+        </div>          
+        <img class="silhouette" src="./assets/img/silhouette-2.png" alt="Silhouette surrealiste">
+      </section>
+
+      <section class="artistes">
+        <div class="artiste">
+          <img src="./assets/img/salvador-dali.jpg" alt="Photo de Salvador Dali">
+          <a href="#"><h3>Salvador Dali</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/marc-chagall.jpg" alt="Photo de Marc Chagall">
+          <a href="#"><h3>Marc Chagall</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/rene-magritte.jpg" alt="Photo de René Magritte">
+          <a href="#"><h3>René Magritte</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/andre-breton.webp" alt="Photo de André Breton">
+          <a href="#"><h3>André Breton</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/alberto-giacometti.jpg" alt="Photo de Alberto Giacometti">
+          <a href="#"><h3>Alberto Giacometti</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/joan-miro.jpg" alt="Photo de Joan Miro">
+          <a href="#"><h3>Joan Miro</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/max-ernst.jpg" alt="Photo de Max Ernst">
+          <a href="#"><h3>Max Ernst</h3></a>
+        </div>
+        <div class="artiste">
+          <img src="./assets/img/dora-maar.jpg" alt="Photo de Dora Maar">
+          <a href="#"><h3>Dora Maar</h3></a>
+        </div>
+      </section>
+
+      <section class="favoris">
+        <h2>Vos favoris</h2>
+        <div class="container-cartes-big">
+          <div class="carte-big">
+            <img src="./assets/img/dali_p-4.jpg" alt="Photo de LA TENTATION DE SAINT ANTOINE (Dali)">
+            <div>
+              <h3>La tentation de Saint-Antoine, Salvador Dali</h3>
+              <p>Musée Royaux des Beaux-Arts de Belgique</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+          <div class="carte-big">
+            <img src="./assets/img/magritte_p-3.jpg" alt="Photo du tableau Le Fils de l'Homme (Magritte)">
+            <div>
+              <h3>Le fils de l'Homme, René Magritte</h3>
+              <p>Musée Magritte, Bruxelles</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cartes dali">
+        <h2>Découvrez Salvador Dali</h2>
+        <div class="container-cartes-small">
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/dali_p-3.jpg" alt="Tableau de La Persistance de la Mémoire">
+              <figcaption>La Persistance de la Mémoire (1931)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Musée d’Art Moderne (MoMA), New York</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/dali_p-5.jpg" alt="Galatée des Sphères (1952)">
+              <figcaption>Galatée des Sphères (1952)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Théâtre-Musée Dalí, Figueras, Espagne</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/dali_p-6.jpg" alt="Cygnes se reflétant dans les Éléphants (1937)">
+              <figcaption>Cygnes se reflétant dans les Éléphants (1937)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Collection privée</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/dali_p-2.jpg" alt="Télévision - Communications. Les sept arts vivants">
+              <figcaption>Télévision - Communications. Les sept arts vivants (1957)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Collection privée</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cartes chagall">
+        <h2>Découvrez Marc Chagall</h2>
+        <div class="container-cartes-small">
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/chagall_p-1.jpg" alt="Tableau de La Pluie">
+              <figcaption>La Pluie (1911)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Musée Solomon R. Guggenheim, New-York</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/chagall_p-2.jpg" alt="I and the Village">
+              <figcaption>I and the Village (1911)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>MOMA, New-York</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/chagall_p-3.jpg" alt="Le Cheval de Cirque">
+              <figcaption>Le Cheval de Cirque (1964)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Collection privée</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/chagall_p-4.jpg" alt="The blue fiddler">
+              <figcaption>The blue fiddler (1947)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Collection privée</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cartes magritte">
+        <h2>Découvrez René Magritte</h2>
+        <div class="container-cartes-small">
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/magritte_p-5.jpg" alt="Tableau Le faux miroir">
+              <figcaption>Le Faux Miroir (1928)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>MOMA, New-York</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/magritte_p-1.jpg" alt="Les Amants">
+              <figcaption>Les Amants (1928)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Galerie nationale d'Australie</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/magritte_p-6.jpg" alt=" La Trahison des images">
+              <figcaption>La Trahison des images (1929)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Musée d'art du comté de Los Angeles</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+          <div class="carte-small">
+            <figure>
+              <img src="./assets/img/magritte_le_retour.jpg" alt="Le Retour">
+              <figcaption>Le Retour (1940)</figcaption>
+            </figure>
+            <div class="infos-btn">
+              <p>Collection privée</p>
+              <button class="btn-secondary">Découvrir</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-texte cookie">
+        <img src="./assets/img/silhouette.png" alt="illustration visage surréaliste">
+        <div class="text-cookie">
+          <h3>Accepter les cookies</h3>
+          <p>Notre site utilise des cookies pour améliorer votre expérience de navigation. En continuant à utiliser notre site, vous acceptez notre utilisation de cookies conformément à notre politique de confidentialité.</p>
+          <button class="btn-none-white">En savoir plus &#10095;</button>
+        </div>
+      </section>
+
+      <section class="actu-blog">
+        <div class="header">
+          <video src="./assets/img/video/painting-2.mp4" type="video/mp4" autoplay muted loop></video>
+          <div class="heading">
+            <h2>Les actualités artistiques</h2>
+            <h3>Notre section actualités vous informe de toutes les nouveautés dans le monde du surréalisme.</h3>
+            <div class="btns">
+              <button class="btn-primary">Découvrir</button>
+              <button class="btn-primary">Voir les expositions</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog">
+          <div class="text">
+            <h2>Nos derniers articles</h2>
+          </div>
+          <div class="container-cartes-blog">
+            <div class="carte-blog">
+              <img src="./assets/img/alberto-giacometti.jpg" alt="Alberto Giacometti">
+              <div>
+                <button class="btn-none">Alberto Giacometti : sa vie incroyable &#10095;</button>
+              </div>
+              
+            </div>
+
+            <div class="carte-blog">
+              <img src="./assets/img/andre-breton-2.jpg" alt="Photo de André Breton">
+              <div>
+                <button class="btn-none">André Breton, le père du surréalisme &#10095;</button>
+              </div>
+            </div>
+
+            <div class="carte-blog">
+              <img src="./assets/img/gala-2.jpg" alt="Photo de Gala">
+              <div>
+                <button class="btn-none">Gala, formidable et muse de Dali &#10095;</button>
+              </div>
+            </div>
+
+            <div class="carte-blog">
+              <img src="./assets/img/pinceaux.webp" alt="Photo de pinceax">
+              <div>
+                <button class="btn-none">Les techniques utilisées pour peindre &#10095;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="expo">
+        <h2>Expositions en cours</h2>
+        <div class="container-cartes-expo">
+          <div class="carte-big expo1">
+            <img src="./assets/img/imagine.webp" alt="Affiche de l'exposition IMAGINE !">
+            <div>
+              <h3>IMAGINE !</h3>
+              <p>100 ans de surréalisme, exposition internationale</p>
+              <p>Les Musées Royaux des Beaux-Arts de Belgique, Centre Pompidou (Paris), jusqu'au 21 juillet 2024</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+
+          <div class="carte-big expo2">
+            <img src="./assets/img/dali-expo.jpg" alt="Tableau de Dali">
+            <div>
+              <h3>Dalí : Disruption and Devotion</h3>
+              <p>Museum of Fine Arts, Boston, du 6 juillet au 1e décembre 2024</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+
+          <div class="carte-big expo3">
+            <img src="./assets/img/shuzo.jpg" alt="Tableau de Shuzo Takiguchi">
+            <div>
+              <h3>The Collection of Shuzo Takiguchi</h3>
+              <p>Prefectural Museum of Art and Design, Toyana, Japon. Jusqu'au 15 juillet 2024</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="musee">
+        <div class="text-btn">
+          <h2>Les musées</h2>
+          <button class="btn-primary">Tout afficher</button>
+        </div>
+        <div class="container-cartes-medium">
+
+          <div class="carte-medium">
+            <img src="./assets/img/maison-musee-dali.jpg" alt="Photo de la maison-musée de Salvador Dali">
+            <div>
+              <h3>Maison musée château de Dali et Gala</h3>
+              <p>Portlligat, Cadaqués, Espagne</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+
+          <div class="carte-medium">
+            <img src="./assets/img/fondation-arp.jpg" alt="Photo de la fondation ARP">
+            <div>
+              <h3>Fondation ARP</h3>
+              <p>Clamart, Paris, France</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+
+          <div class="carte-medium">
+            <img src="./assets/img/rolandseck.webp" alt="Photo du musée Rolandseck">
+            <div>
+              <h3>Musée d'Art contemporain de Rolandseck</h3>
+              <p>Remagen, Rhénanie-Palatinat, Allemagne</p>
+              <button class="btn-none">En savoir plus &#10095;</button>
+            </div>
+          </div>
+      </section>
+
+      <section class="section-texte-2">
+        <p>Bienvenue dans l'organisme Surréaliste, repère des amateurs d'arts modernes. Vous trouverez ici des informations sur les artistes, les musées, l'histoire et bien d'autres choses.</p>
+        <button class="btn-none-white">En savoir plus &#10095;</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-haut">
+        <div class="logo-zone">
+          <div class="logo">
+            <img src="./assets/img/logo.svg" alt="logo">
+            <p>Surréaliste</p>
+          </div>
+          <div class="zone">
+            <span class="material-symbols-outlined">
+              location_on
+            </span>
+            <p>Canada</p>
+          </div>
+        </div>
+        <nav class="nav-footer-1" aria-label="navigation secondaire">
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Musées</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-footer-2-desktop" aria-label="navigation primaire bureau">
+          <ul>
+            <li><a href="#">Accueil</a><span class="material-symbols-outlined">
+              keyboard_arrow_down
+              </span></li>
+            <li><a href="#">Les artistes</a><span class="material-symbols-outlined">
+              keyboard_arrow_down
+              </span></li>
+            <li><a href="#">Les expositions</a><span class="material-symbols-outlined">
+              keyboard_arrow_down
+              </span></li>
+            <li><a href="#">À propos</a><span class="material-symbols-outlined">
+              keyboard_arrow_down
+              </span></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bas">
+        <div class="reseaux-infolettre">
+          <div class="infolettre">
+            <label for="infolettre">Inscrivez-vous à l'infolettre</label>
+            <input id="infolettre" type="text">
+          </div>
+          <nav class="nav-footer-2-mobile" aria-label="navigation primaire mobile">
+            <ul>
+              <li><a href="#">Accueil</a><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></li>
+              <li><a href="#">Les artistes</a><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></li>
+              <li><a href="#">Les expositions</a><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></li>
+              <li><a href="#">À propos</a><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></li>
+            </ul>
+          </nav>
+          <div class="reseaux">
+            <p>Suivez-nous sur les réseaux sociaux!</p>
+            <div>
+              <img src="./assets/img/facebook.png" alt="icône Facebook">
+              <img src="./assets/img/instagram.png" alt="icône Instagram">
+              <img src="./assets/img/twitter.png" alt="icône Twitter">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="liens">
+          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Accessibilité</a>
+          <a href="#">Témoins</a>
+        </div>
+        <div class="footer-texte">
+          <p>Travail réalisé par Clémentine en juin 2024. Toutes les images sont libres de droits, issues de wikipédia ou google licences creative commons.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

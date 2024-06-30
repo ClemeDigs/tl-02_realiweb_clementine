@@ -1,0 +1,33 @@
+// COLORS
+$blue: #5d7d71;
+$canard:#435944;
+$green:#37402B;
+$light:#E5F3EC;
+$dark: #20211D;
+$none: rgba(255, 255, 255, 0);
+$light-blue : #7ea496;
+
+
+$color-primary: $blue;
+$color-secondary: $canard;
+$color-third: $green;
+$color-light: $light;
+$color-text: $dark;
+
+
+
+// BREAKPOINTS
+$small-size: 360px;
+$medium-size: 768px;
+$large-size: 1024px;
+$xlarge-size: 1200px;
+
+$small-plus: "(min-width: #{$small-size})";
+$medium-plus: "(min-width: #{$medium-size})";
+$large-plus: "(min-width: #{$large-size})";
+$xlarge-plus: "(min-width: #{$xlarge-size}";
+
+
+// SHADOWS
+$box-shadow-small: 0px 3px 6px rgba(40, 31, 20, 0.3);
+$box-shadow-large: 2px 6px 10px rgba(40, 31, 20, 0.3);
